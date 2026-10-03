@@ -1,0 +1,19 @@
+seed,comparison,other,acc_ref,acc_other,only_ref_correct,only_other_correct,p_exact,p_holm
+42,CGF-Net (proposed) vs EfficientNet-B0,cnn,97.05,95.95,40,18,0.00535,0.02677
+42,CGF-Net (proposed) vs ViT-B/16,vit,97.05,97.05,19,19,1.0,1.0
+42,CGF-Net (proposed) vs Late fusion (avg),late_avg,97.05,97.4,13,20,0.29621,0.88862
+42,CGF-Net (proposed) vs Late fusion (val-tuned),late_val,97.05,97.2,16,19,0.73588,1.0
+42,CGF-Net (proposed) vs Concat fusion,concat,97.05,95.9,40,17,0.0032,0.01921
+42,CGF-Net (proposed) vs Scalar-gate fusion,gate_scalar,97.05,96.5,27,16,0.12629,0.50516
+123,CGF-Net (proposed) vs EfficientNet-B0,cnn,96.85,96.35,34,24,0.23705,0.71114
+123,CGF-Net (proposed) vs ViT-B/16,vit,96.85,96.3,31,20,0.16078,0.64312
+123,CGF-Net (proposed) vs Late fusion (avg),late_avg,96.85,97.15,13,19,0.37709,0.75417
+123,CGF-Net (proposed) vs Late fusion (val-tuned),late_val,96.85,97.45,10,22,0.0501,0.25051
+123,CGF-Net (proposed) vs Concat fusion,concat,96.85,96.0,38,21,0.03634,0.21806
+123,CGF-Net (proposed) vs Scalar-gate fusion,gate_scalar,96.85,96.55,29,23,0.48846,0.75417
+2026,CGF-Net (proposed) vs EfficientNet-B0,cnn,95.95,96.0,37,38,1.0,1.0
+2026,CGF-Net (proposed) vs ViT-B/16,vit,95.95,96.3,29,36,0.45702,1.0
+2026,CGF-Net (proposed) vs Late fusion (avg),late_avg,95.95,97.1,15,38,0.00219,0.01314
+2026,CGF-Net (proposed) vs Late fusion (val-tuned),late_val,95.95,96.6,26,39,0.13603,0.54413
+2026,CGF-Net (proposed) vs Concat fusion,concat,95.95,96.85,21,39,0.02734,0.1367
+2026,CGF-Net (proposed) vs Scalar-gate fusion,gate_scalar,95.95,95.7,40,35,0.64446,1.0

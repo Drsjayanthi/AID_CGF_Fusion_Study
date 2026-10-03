@@ -1,0 +1,34 @@
+{
+  "fingerprint": "0339809eac",
+  "config": {
+    "image_size": 224,
+    "batch_size": 8,
+    "accum": 2,
+    "epochs": 25,
+    "warmup": 2,
+    "min_epochs": 10,
+    "patience": 8,
+    "lr_cnn": 0.0001,
+    "lr_vit": 3e-05,
+    "lr_head": 0.0005,
+    "min_lr_ratio": 0.01,
+    "wd": 0.05,
+    "ls": 0.1,
+    "clip": 1.0,
+    "fusion_dim": 256,
+    "fusion_heads": 4,
+    "aux_w": 0.3,
+    "branch_drop": 0.1,
+    "split": [
+      0.7,
+      0.1,
+      0.2
+    ],
+    "split_seed": 2026,
+    "pretrained": true,
+    "smoke": false
+  },
+  "torch": "2.5.1+cu121",
+  "python": "3.10.20",
+  "platform": "Windows-10-10.0.26200-SP0"
+}

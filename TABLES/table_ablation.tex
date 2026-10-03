@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Ablation of CGF-Net components (mean $\pm$ SD over seeds).}
+\label{tab:ablation}
+\begin{tabular}{lcccccccccc}
+\toprule
+Model & Seeds & Cross-attn & Channel gate & Aux loss & Accuracy (\%) & Macro-F1 (\%) & ECE (\%) & NLL & Params (M) & $\Delta$ Acc vs CGF (pp) \\
+\midrule
+Scalar-gate fusion & 3 & -- & scalar & -- & 96.25 $\pm$ 0.48 & 96.02 $\pm$ 0.51 & \textbf{5.25 $\pm$ 0.64} & 0.215 $\pm$ 0.019 & 90.5 & -0.37 \\
+Concat fusion & 3 & -- & -- & -- & 96.25 $\pm$ 0.52 & 96.04 $\pm$ 0.51 & 7.54 $\pm$ 0.90 & 0.235 $\pm$ 0.017 & 90.5 & -0.37 \\
+CGF w/o cross-attn & 3 & -- & \checkmark & \checkmark & 95.97 $\pm$ 1.03 & 95.70 $\pm$ 1.05 & 5.51 $\pm$ 0.33 & 0.218 $\pm$ 0.017 & 90.7 & -0.65 \\
+CGF w/o channel gate & 3 & \checkmark & -- & \checkmark & \textbf{96.72 $\pm$ 0.71} & \textbf{96.48 $\pm$ 0.76} & 7.40 $\pm$ 0.38 & 0.222 $\pm$ 0.010 & 91.1 & +0.10 \\
+CGF w/o aux loss & 3 & \checkmark & \checkmark & -- & 96.53 $\pm$ 0.23 & 96.29 $\pm$ 0.22 & 6.10 $\pm$ 0.28 & 0.221 $\pm$ 0.017 & 91.3 & -0.08 \\
+CGF-Net (proposed) & 3 & \checkmark & \checkmark & \checkmark & 96.62 $\pm$ 0.59 & 96.38 $\pm$ 0.61 & 6.03 $\pm$ 0.83 & \textbf{0.206 $\pm$ 0.017} & 91.3 & — \\
+\bottomrule
+\end{tabular}
+\end{table}

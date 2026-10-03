@@ -1,0 +1,11 @@
+True class,Predicted as,Count (all seeds),Rate (% of true class)
+Resort,Park,12,6.9
+Square,Center,10,5.05
+Playground,Stadium,10,4.5
+School,Commercial,9,5.0
+Center,Church,8,5.13
+Center,Commercial,7,4.49
+Square,Church,6,3.03
+Resort,School,6,3.45
+MediumResidential,DenseResidential,6,3.45
+Square,Park,5,2.53

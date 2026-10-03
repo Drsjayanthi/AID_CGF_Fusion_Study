@@ -1,0 +1,13 @@
+figure,width_in,height_in,width_mm,pixels,dpi,png_kb
+fig01_class_distribution,7.0,2.0,177.8,4200x1200,600,194.1
+fig02_sample_gallery,7.0,5.42,177.8,4200x3255,600,2631.6
+fig03_calibration,7.0,2.5,177.8,4200x1500,600,312.3
+fig04_learning_curves,7.0,2.35,177.8,4200x1410,600,510.0
+fig05_confusion_matrix_cgf,7.0,6.3,177.8,4200x3780,600,452.6
+fig06_per_class_f1,3.35,5.6,85.1,2010x3360,600,539.8
+fig07_gate_analysis,7.0,3.5,177.8,4200x2100,600,310.2
+fig08_tsne_embeddings,7.0,2.5,177.8,4200x1500,600,322.9
+fig09_robustness,7.0,2.7,177.8,4200x1620,600,226.6
+fig10_accuracy_vs_cost,3.35,2.6,85.1,2010x1560,600,152.1
+fig11_label_efficiency,4.34,2.4,110.2,2604x1440,600,231.9
+fig12_ablation,3.35,2.4,85.1,2010x1440,600,121.8

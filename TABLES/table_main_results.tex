@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Test-set performance on AID (mean $\pm$ SD over seeds). Best value per column in bold.}
+\label{tab:main}
+\begin{tabular}{lccccccccc}
+\toprule
+Model & Seeds & Accuracy (\%) & Macro-F1 (\%) & MCC & Kappa & AUC (\%) & ECE (\%) & NLL & Params (M) \\
+\midrule
+EfficientNet-B0 & 3 & 96.10 $\pm$ 0.22 & 95.79 $\pm$ 0.26 & 0.9597 $\pm$ 0.0022 & 0.9596 $\pm$ 0.0023 & 99.82 $\pm$ 0.05 & 9.34 $\pm$ 0.40 & 0.236 $\pm$ 0.012 & 4.0 \\
+ViT-B/16 & 3 & 96.55 $\pm$ 0.43 & 96.34 $\pm$ 0.44 & 0.9643 $\pm$ 0.0045 & 0.9643 $\pm$ 0.0045 & 99.66 $\pm$ 0.09 & 8.28 $\pm$ 0.40 & 0.237 $\pm$ 0.007 & 85.8 \\
+Late fusion (avg) & 3 & \textbf{97.22 $\pm$ 0.16} & \textbf{97.02 $\pm$ 0.17} & \textbf{0.9712 $\pm$ 0.0016} & \textbf{0.9712 $\pm$ 0.0017} & \textbf{99.92 $\pm$ 0.01} & 10.13 $\pm$ 0.39 & \textbf{0.204 $\pm$ 0.005} & cnn+vit \\
+Late fusion (val-tuned) & 3 & 97.08 $\pm$ 0.44 & 96.89 $\pm$ 0.47 & 0.9698 $\pm$ 0.0045 & 0.9698 $\pm$ 0.0045 & 99.91 $\pm$ 0.02 & 10.09 $\pm$ 0.27 & 0.205 $\pm$ 0.008 & cnn+vit \\
+Concat fusion & 3 & 96.25 $\pm$ 0.52 & 96.04 $\pm$ 0.51 & 0.9612 $\pm$ 0.0054 & 0.9612 $\pm$ 0.0054 & 99.79 $\pm$ 0.09 & 7.54 $\pm$ 0.90 & 0.235 $\pm$ 0.017 & 90.5 \\
+Scalar-gate fusion & 3 & 96.25 $\pm$ 0.48 & 96.02 $\pm$ 0.51 & 0.9612 $\pm$ 0.0049 & 0.9612 $\pm$ 0.0049 & 99.78 $\pm$ 0.08 & \textbf{5.25 $\pm$ 0.64} & 0.215 $\pm$ 0.019 & 90.5 \\
+CGF-Net (proposed) & 3 & 96.62 $\pm$ 0.59 & 96.38 $\pm$ 0.61 & 0.9650 $\pm$ 0.0061 & 0.9650 $\pm$ 0.0061 & 99.86 $\pm$ 0.05 & 6.03 $\pm$ 0.83 & 0.206 $\pm$ 0.017 & 91.3 \\
+\bottomrule
+\end{tabular}
+\end{table}

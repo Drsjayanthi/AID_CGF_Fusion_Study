@@ -1,0 +1,5 @@
+Subset,Images,Mean CNN weight
+Only CNN branch correct,30,0.3928
+Only ViT branch correct,40,0.3843
+Both branches correct,1892,0.3198
+Both branches wrong,38,0.3675

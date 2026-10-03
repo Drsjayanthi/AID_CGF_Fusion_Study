@@ -1,0 +1,4 @@
+model,silhouette_cosine
+EfficientNet-B0,0.278
+ViT-B/16,0.6874
+CGF-Net (proposed),0.7927

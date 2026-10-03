@@ -1,0 +1,5 @@
+,images,share (%)
+Total,10000,100.0
+Train,6999,70.0
+Validation,1001,10.0
+Test,2000,20.0

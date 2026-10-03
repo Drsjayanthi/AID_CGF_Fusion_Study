@@ -1,0 +1,5 @@
+Subset,Share of test images (%),CGF-Net accuracy on subset (%)
+Both backbones correct,94.55,99.21
+Only CNN correct,1.55,62.77
+Only ViT correct,2.0,74.84
+Both backbones wrong,1.9,18.46
